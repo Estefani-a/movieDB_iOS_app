@@ -37,7 +37,8 @@ El objetivo principal de esta aplicacion es mostrar el Top de peliculas mejor ca
 #### Tecnologias utilizadas 💻:
 - Swift 5
 - UIKit: para crear componentes de la interfaz de usuario.
-- URLSession: para realizar peticiones HTTP y interactuar con servidores para obtener o enviar datos.
+- URLSession: para realizar solicitudes HTTP, HTTPS y interactuar con servidores para obtener o enviar datos.
+- Combine: para gestionar datos reactivos y para propagar cambios de estado en la aplicación.
 
 #### Herramientas requeridas 🛠:
 - IDE: Xcode 14
