@@ -54,7 +54,12 @@ El objetivo principal de esta aplicacion es mostrar el Top de peliculas mejor ca
 
 ## Imágenes del proyecto
 
-![home](https://github.com/Estefani-a/ "home")
+<div align="center">
+  <img src="https://github.com/Estefani-a/movieDB_iOS_app/blob/main/images/lauch.png" alt="imagen2" width="20%" />
+  <img src="https://github.com/Estefani-a/movieDB_iOS_app/blob/main/images/home.png" alt="imagen3" width="20%" />
+  <img src="https://github.com/Estefani-a/movieDB_iOS_app/blob/main/images/search1.png" alt="imagen4" width="20%" />
+  <img src="https://github.com/Estefani-a/movieDB_iOS_app/blob/main/images/detailView.png" alt="imagen4" width="20%"/>
+</div>
 
 ---
 
