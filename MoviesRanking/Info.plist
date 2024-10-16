@@ -4,8 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SourceSans3-VariableFont_wght</string>
-		<string>SourceSans3-Bold</string>
+		<string>SourceSans3-Regular.ttf</string>
+		<string>SourceSans3-Bold.ttf</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>

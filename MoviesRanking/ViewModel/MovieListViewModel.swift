@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-class MovieListViewModel: ObservableObject {
-    @Published var movies: [Movie] = []
+class MovieListViewModel: ObservableObject { //MovieListViewModel conforma el protocolo ObservableObject, lo que significa que puede ser observada por las vistas de SwiftUI.
+    @Published var movies: [Movie] = []//cualquier cambio en estas propiedades emitirá un evento a cualquier suscriptor 
     @Published var filteredMovies: [Movie] = []
     @Published var searchQuery: String = ""{
         didSet {
@@ -19,7 +19,7 @@ class MovieListViewModel: ObservableObject {
     @Published var errorMessage: String = ""
     
     private let movieService = MovieService()
-    private var cancellables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>() //conjunto que se utiliza para almacenar las suscripciones a publishers de Combine
 
     func fetchTopRatedMovies(completion: (()->Void)? = nil) {
         movieService.fetchTopRatedMovies { [weak self] result in
@@ -36,6 +36,7 @@ class MovieListViewModel: ObservableObject {
         }
     }
     
+    //filterMovies se llama cada vez que searchQuery cambia debido a la propiedad didSet
     func filterMovies() {
         if searchQuery.isEmpty {
             filteredMovies = movies

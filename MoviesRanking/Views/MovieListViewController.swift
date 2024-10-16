@@ -117,7 +117,6 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.row < viewModel.filteredMovies.count else { return }
         let movie = viewModel.filteredMovies[indexPath.row]

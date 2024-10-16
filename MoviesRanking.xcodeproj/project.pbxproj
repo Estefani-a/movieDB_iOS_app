@@ -20,7 +20,7 @@
 		5B539E4C2CBC928900933F39 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B539E4B2CBC928900933F39 /* MovieListViewController.swift */; };
 		5B539E502CBC946900933F39 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B539E4F2CBC946900933F39 /* MovieDetailViewController.swift */; };
 		5B539E522CBCA1D300933F39 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B539E512CBCA1D300933F39 /* MovieCell.swift */; };
-		5B539E572CBCAC7E00933F39 /* SourceSans3-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B539E552CBCAC7E00933F39 /* SourceSans3-VariableFont_wght.ttf */; };
+		5B539E572CBCAC7E00933F39 /* SourceSans3-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B539E552CBCAC7E00933F39 /* SourceSans3-Regular.ttf */; };
 		5B539E592CBCAE1C00933F39 /* SourceSans3-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B539E582CBCAE1C00933F39 /* SourceSans3-Bold.ttf */; };
 		5B539E5B2CBCC19200933F39 /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B539E5A2CBCC19200933F39 /* Navbar.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 		5B539E4B2CBC928900933F39 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		5B539E4F2CBC946900933F39 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		5B539E512CBCA1D300933F39 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		5B539E552CBCAC7E00933F39 /* SourceSans3-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSans3-VariableFont_wght.ttf"; path = "../../../../Downloads/Source_Sans_3/SourceSans3-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		5B539E552CBCAC7E00933F39 /* SourceSans3-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSans3-Regular.ttf"; path = "../../../../Downloads/Source_Sans_3/SourceSans3-Regular.ttf"; sourceTree = "<group>"; };
 		5B539E582CBCAE1C00933F39 /* SourceSans3-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSans3-Bold.ttf"; path = "../../../../Downloads/Source_Sans_3/static/SourceSans3-Bold.ttf"; sourceTree = "<group>"; };
 		5B539E5A2CBCC19200933F39 /* Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1D81F52CBF840000928B94 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5B539E5A2CBCC19200933F39 /* Navbar.swift */,
+				5B1D81F32CBDCF8E00928B94 /* SearchBar.swift */,
+				5B539E512CBCA1D300933F39 /* MovieCell.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		5B539E212CBC905700933F39 = {
 			isa = PBXGroup;
 			children = (
@@ -76,11 +86,12 @@
 		5B539E2C2CBC905700933F39 /* MoviesRanking */ = {
 			isa = PBXGroup;
 			children = (
-				5B539E532CBCAC3700933F39 /* Fonts */,
 				5B539E442CBC90EF00933F39 /* Services */,
 				5B539E432CBC90E500933F39 /* ViewModel */,
 				5B539E422CBC90D300933F39 /* Model */,
 				5B539E412CBC90B100933F39 /* Views */,
+				5B1D81F52CBF840000928B94 /* components */,
+				5B539E532CBCAC3700933F39 /* Fonts */,
 				5B539E2D2CBC905700933F39 /* AppDelegate.swift */,
 				5B539E2F2CBC905700933F39 /* SceneDelegate.swift */,
 				5B539E312CBC905700933F39 /* ViewController.swift */,
@@ -97,9 +108,6 @@
 			children = (
 				5B539E4B2CBC928900933F39 /* MovieListViewController.swift */,
 				5B539E4F2CBC946900933F39 /* MovieDetailViewController.swift */,
-				5B539E512CBCA1D300933F39 /* MovieCell.swift */,
-				5B539E5A2CBCC19200933F39 /* Navbar.swift */,
-				5B1D81F32CBDCF8E00928B94 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				5B539E582CBCAE1C00933F39 /* SourceSans3-Bold.ttf */,
-				5B539E552CBCAC7E00933F39 /* SourceSans3-VariableFont_wght.ttf */,
+				5B539E552CBCAC7E00933F39 /* SourceSans3-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -198,7 +206,7 @@
 				5B539E3A2CBC905900933F39 /* LaunchScreen.storyboard in Resources */,
 				5B539E372CBC905900933F39 /* Assets.xcassets in Resources */,
 				5B539E352CBC905700933F39 /* Main.storyboard in Resources */,
-				5B539E572CBCAC7E00933F39 /* SourceSans3-VariableFont_wght.ttf in Resources */,
+				5B539E572CBCAC7E00933F39 /* SourceSans3-Regular.ttf in Resources */,
 				5B539E592CBCAE1C00933F39 /* SourceSans3-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

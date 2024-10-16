@@ -108,14 +108,13 @@ class MovieDetailViewController: UIViewController {
                 contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
             ])
     }
-
     
     private func setupViews() {
         titleLabel.font = UIFont(name: "SourceSans3-Bold", size: 25) ?? UIFont.boldSystemFont(ofSize: 25)
         titleLabel.numberOfLines = 0 //multiples lineas
         titleLabel.textColor = UIColor(named: "GreenMedium")
         
-        releaseDateLabel.font = UIFont(name: "SourceSans3-Bold", size: 16) ?? UIFont.boldSystemFont(ofSize: 16)
+        releaseDateLabel.font = UIFont(name: "SourceSans3-Bold", size: 17) ?? UIFont.boldSystemFont(ofSize: 17)
         releaseDateLabel.textColor = UIColor(named: "GreenMedium")
         ratingLabel.font = UIFont(name: "SourceSans3-Regular", size: 16) ?? UIFont.boldSystemFont(ofSize: 16)
         ratingLabel.textColor = UIColor(named: "GreenIntense")
